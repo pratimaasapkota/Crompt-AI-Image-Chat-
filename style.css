@@ -69,7 +69,11 @@ body {
     }
   }
   
-  
+  iframe {
+    width: 100%;
+    height: 100vh;
+    display: none;
+  }
   
   .loaded {
     display: block !important;
