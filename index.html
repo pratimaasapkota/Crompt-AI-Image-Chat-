@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crompt-AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Modal -->
+    <div class="modal" id="infoModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Welcome to Crompt-AI</h2>
+            <p>To generate an image, write: <strong>Generate image "e.g., a cat"</strong></p>
+            <i>Errors may occur during responses as this is an experimental project.</i>
+        </div>
+    </div>
+
+    <!-- Loader -->
+    <div class="loader-container">
+        <div class="loader">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M11.267 0C6.791-.015-1.82 10.246 1.397 12.964l.79.669a3.88 3.88 0 0 0-.22 1.792c.084.84.518 1.644 1.22 2.266c.666.59 1.542.964 2.392.964c1.406 3.24 4.62 5.228 8.386 5.34c4.04.12 7.433-1.776 8.854-5.182c.093-.24.488-1.316.488-2.267c0-.956-.54-1.352-.885-1.352c-.01-.037-.078-.286-.172-.586c-.093-.3-.19-.51-.19-.51c.375-.563.382-1.065.332-1.35c-.053-.353-.2-.653-.496-.964c-.296-.311-.902-.63-1.753-.868l-.446-.124c-.002-.019-.024-1.053-.043-1.497c-.014-.32-.042-.822-.197-1.315c-.186-.668-.508-1.253-.911-1.627c1.112-1.152 1.806-2.422 1.804-3.511c-.003-2.095-2.576-2.729-5.746-1.416l-.672.285A678.22 678.22 0 0 0 12.7.504C12.304.159 11.817.002 11.267 0z"/>
+            </svg>
+        </div>
+    </div>
+    
+    <!-- Main Iframe -->
+    <iframe id="myIframe" src="https://cromptai.vercel.app/" frameborder="0"></iframe>
+    
+    <script src="script.js"></script>
+</body>
+</html>
